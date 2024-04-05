@@ -1,0 +1,123 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+    user-select: none;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    gap: 200px;
+}
+
+.left h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.maccuimg {
+    width: 300px;
+    height: 300px;
+    
+}
+
+.maccuimg:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    
+}
+
+.maccuimg:active {
+    opacity: 0.8;
+    transform: scale(1.02);
+    
+}
+
+.upgrade {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 60px;
+    border: 5px groove red;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px;
+}
+
+.mid-section h4{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.mid-section p{
+    margin: 0;
+}
+
+.upgrade-img {
+    width: 50px;
+}
+
+.bigmac-img {
+    width: 20px;
+    height: 20px;
+}
+
+.cost-info {
+    display: flex;
+    gap: 5px;
+}
+
+.next-level-info {
+    position: absolute;
+    right: -90px;
+    background-color: red;
+    height: 80px;
+    width: 100px;
+    text-align: center;
+    display: none;
+
+}
+
+.upgrade:hover .next-level-info{
+    display: block;
+}
+
+.statistics{
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    padding: 10px;
+    border: 5px groove red;
+    border-radius: 5px;
+    
+    
+}
+
+.texts {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('mcparty.gif');
+    background-size: cover;
+    z-index: -1; /* Ensure it's behind other elements */
+}
+
